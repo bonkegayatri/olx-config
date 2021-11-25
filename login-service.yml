@@ -1,6 +1,6 @@
 spring:
  datasource:
-  url: jdbc:mysql://localhost:3306/olxLogindb
+  url: jdbc:mysql://localhost:3306/olx-users
   driver-class-name: com.mysql.cj.jdbc.Driver
   username: root
   password: root
@@ -9,3 +9,8 @@ spring:
   properties:
     hibernate:
     dialect: org.hibernate.dialect.MySQL8Dialect
+  data:  
+    monodb: 
+      host: localhost
+      port: 27017
+      database: olxLogindb
